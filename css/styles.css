@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.login-container {
+    background: white;
+    padding: 2em;
+    display: flexbox ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.login-container h2{
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.header-principal{
+    margin:0; 
+    background-color: #ccc;   
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-nav ul{
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    margin-top: 35px;
+}
+
+img{
+    height: 110px;
+}
+button {
+    width: 100%;
+    padding: 0.7em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+
+
+/*ESTILOS DASHBOARD.PHP*/
+.dashboard-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+    text-align: center;
+}
+
+.dashboard-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard-container li {
+    margin: 1em 0;
+}
+
+.dashboard-container a {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.dashboard-container a:hover {
+    background-color: #0056b3;
+}
