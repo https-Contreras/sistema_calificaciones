@@ -6,7 +6,7 @@ $mensaje="";
 if ($_SERVER['REQUEST_METHOD']==='POST'){
     $usuario= $_POST['usuario']??'';
     $contrasena = $_POST['contrasena']??'';
-    $stmt =$conn->prepare("SELECT usuario, contrasena FROM maestros Where usuario= ? ");
+    $stmt =$conn->prepare("SELECT id, usuario, contrasena FROM maestros Where usuario= ? ");
     $stmt->bind_param("s", $usuario);
     $stmt->execute();
     $resultado = $stmt->get_result();
@@ -15,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST'){
         $maestro = $resultado->fetch_assoc();
         if ($contrasena === $maestro['contrasena']){
             $_SESSION['usuario_maestro'] = $maestro['usuario'];
+            $_SESSION['maestro_id'] = $maestro['id'];
             header('Location: dashboard.php');
             exit;
         }else{

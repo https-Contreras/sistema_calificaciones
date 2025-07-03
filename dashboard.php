@@ -32,7 +32,7 @@ $maestro_id = $_SESSION['usuario_maestro'];
             <li >Opcion 1</li>
             <li >Opcion 2</li>
             <li >Opcion 3</li>
-            <li >Opcion 4</li>
+            <li ><a href="logout.php">Logout</a></li>
         </ul>
         </nav>
         <img src="https://www.designevo.com/res/templates/thumb_small/banner-and-educational-supplies-shield.webp" alt="logo escuela">
