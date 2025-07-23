@@ -33,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $mensaje = "❌ No se pudo identificar al maestro.";
     }
+    $stmt->close();
 }
 ?>
 
@@ -74,6 +75,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </ul>
             <button type="submit">Registrar alumno</button>
         </form>
+        <a href="dashboard.php">
+                 <button>🔙 Volver al panel</button>
+            </a>
         <?php if (isset($_GET['registro']) && $_GET['registro'] === 'exito'): ?>
              <p style="color: green;">✅ Alumno registrado exitosamente.</p>
          <?php endif; ?>

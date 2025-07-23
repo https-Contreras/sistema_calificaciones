@@ -43,8 +43,8 @@ if ($_SERVER['REQUEST_METHOD']==='POST'){
         <h1>Instituto Tecnologico Inventado</h1>
         <nav class="main-nav">
         <ul>
-            <li >Opcion 1</li>
-            <li >Opcion 2</li>
+            <li >CONTACTO</li>
+            <li >ABOUT US</li>
             <li >Opcion 3</li>
             <li >Opcion 4</li>
         </ul>
